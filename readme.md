@@ -41,20 +41,28 @@ API 1
 API 2
 
 '' ''                           "detail": "Invalid Names"
+
 gloom ''                        "detail": "Invalid Names"       
+
 '' ekans                        "detail": "Invalid Names"
+
 gloom ekans                     "battleId": "943706bc-62ea-4e7c-94e9-8e7a6950912e",
+
                                 "status": "BATTLE_STARTED"
 gloom ekas                       "battleId": "943706bc-62ea-4e7c-94e9-8e7a6950912e",
+
                                  "status": "BATTLE_STARTED"
 Glooom Ekaans                    "battleId": "943706bc-62ea-4e7c-94e9-8e7a6950912e",
+
                                  "status": "BATTLE_STARTED"
 GLoooM EkAans                    "battleId": "943706bc-62ea-4e7c-94e9-8e7a6950912e",
+
                                  "status": "BATTLE_STARTED"
 Gloom Ekans                      "battleId": "943706bc-62ea-4e7c-94e9-8e7a6950912e",
+
                                  "status": "BATTLE_STARTED"
 pikachu charizard                 "battleId": "480542a5-4342-46ca-84e8-f2eabe7d190a",
-                                 "status": "BATTLE_STARTED"
+                                 
 
 API 3
 

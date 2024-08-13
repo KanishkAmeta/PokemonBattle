@@ -1,1 +1,1 @@
-web: uvicorn router:app --host 0.0.0.0 --port $PORT
+web: uvicorn app:router --host 0.0.0.0 --port $PORT

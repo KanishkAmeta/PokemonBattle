@@ -1,7 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from battle import *
 from pydantic import BaseModel
-from typing import Optional
 import uuid
 import asyncio
 
@@ -17,7 +16,7 @@ valid_names = pokemon_processor.get_valid_names()
 def root():
     #return pokemon_processor.get_pokemon_data('charizard')
     return {'Pokemon':'Gotta catch\'em all',
-            'listing with pagination':'api/list/page={num\}&list={num\}',
+            'listing with pagination':'api/list/page=num&limit=num',
             'begin battle':'battle/name1&&name2'
             }
 
@@ -28,8 +27,8 @@ def list_pokemon(page: int = 1, limit: int = 20):
         raise HTTPException(status_code=404, detail="Pagination not possible, page and limit should be more than 1")
     pokemons, total_items = pokemon_processor.list_pokemon(page, limit)
     total_pages = (total_items + limit - 1) // limit
-    if total_pages<1:
-        raise HTTPException(status_code=404, detail="Pagination not possible")
+    if total_pages<1 or total_pages<page:
+        raise HTTPException(status_code=404, detail="Pagination not possible, select correct page values")
     return {
         "page": page,
         "limit": limit,

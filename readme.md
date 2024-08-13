@@ -37,7 +37,8 @@ the result will be returned like this:
 API 1      
    Test                                                Results
  0 0      {"detail":"Pagination not possible, page and limit should be more than 1"}
-
+ 100 15   {"detail":"Pagination not possible, select correct page values"}
+ 
 API 2
 
 '' ''                           {"detail": "Invalid Names"}

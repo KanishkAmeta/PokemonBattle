@@ -17,7 +17,8 @@ def root():
     #return pokemon_processor.get_pokemon_data('charizard')
     return {'Pokemon':'Gotta catch\'em all',
             'listing with pagination':'api/list/page=num&limit=num',
-            'begin battle':'battle/name1&&name2'
+            'begin battle':'battle/name1&&name2',
+            'get battle results':'/api/battle/status/battle_id'
             }
 
 
